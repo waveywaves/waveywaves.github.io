@@ -1,7 +1,10 @@
 import React from 'react';
+
 import ListMenu from './ListMenu/ListMenu';
 import NavigationMenu from './NavigationMenu/NavigationMenu';
 import Body from './Body/Body';
+import './Blog.css'
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -17,7 +20,7 @@ function Blog() {
             <Col>
                 <Body/>
             </Col>
-            <Col>
+            <Col    >
                 <NavigationMenu/>
             </Col>
         </Row>

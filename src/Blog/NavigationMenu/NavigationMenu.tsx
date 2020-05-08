@@ -1,9 +1,10 @@
 import React from 'react';
+import './NavigationMenu.css'
 
 function NavigationMenu() {
   return (
     <div className="NavigationMenu">
-        NavigationMenu
+        
     </div>
   );
 }
