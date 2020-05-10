@@ -1,0 +1,36 @@
+.Header {
+  background-color: #ffffff;
+  min-width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  border-style: groove;
+  padding: 20px 10px;
+  position: relative; /* Sticky header will change this value */
+}
+
+.stickyHeader {
+  position: relative;
+  visibility: hidden;
+}
+
+.sticky .stickyHeaderInner {
+  visibility: visible;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-style: groove;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}

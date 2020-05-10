@@ -1,11 +1,14 @@
-.ListMenu {
-  background-color: #0f2b68;
-  min-height: 100vh;
+.Post {
+  background-color: #258a9c;
+  min-height: 50vh;
+  min-width: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   border-style: groove;
+  padding: 20px 10px;
+  margin: 2%;
 }
