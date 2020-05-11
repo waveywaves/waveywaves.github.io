@@ -14,20 +14,10 @@ import Col from 'react-bootstrap/Col';
 
 function Blog() {
   return (
-    <div>
-        <Row>
-            <Header/>
-        </Row>
-        <div  className="Blog">
-            <Container fluid="md">
-            <Row>
-                <Col>
-                    <Body/>
-                </Col>
-            </Row>
-            </Container>
-        </div>
-    </div>
+    <Container>
+        <Header/>
+        <Body/>
+    </Container>
   );
 }
 

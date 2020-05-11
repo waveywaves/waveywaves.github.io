@@ -2,14 +2,15 @@ import React from 'react';
 import './Body.css'
 
 import Post from './Post/Post'
+import Container from 'react-bootstrap/Container';
 
 function Body() {
   return (
-    <div className="Body">
+    <Container className="Body">
         <Post/>
         <Post/>
         <Post/>
-    </div>
+    </Container>
   );
 }
 

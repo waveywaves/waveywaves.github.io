@@ -1,12 +1,10 @@
 .Post {
   background-color: #258a9c;
-  min-height: 50vh;
-  min-width: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
   border-style: groove;
   padding: 20px 10px;
