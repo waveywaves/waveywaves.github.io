@@ -1,20 +1,19 @@
-import React, { Fragment, useEffect, useRef, useState } from 'react';
+import React from 'react';
 import './Header.css';
-import Col from 'react-bootstrap/Col';
 
 function StickyHeader() {
   return (
     <div className="stickyHeaderInner">
-          <a>
+          <a href="https://waveywaves.github.io">
             waveywaves
           </a>
-          <a>
+          <a href="https://waveywaves.github.io">
             • Work 
           </a>
-          <a>
+          <a href="https://waveywaves.github.io">
             • Play
           </a>
-          <a>
+          <a href="https://waveywaves.github.io">
             • Info 
           </a>
     </div>
