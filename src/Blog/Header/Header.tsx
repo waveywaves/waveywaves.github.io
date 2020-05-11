@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Header.css';
 import StickyHeader from './StickyHeader'
-import Container from 'react-bootstrap/Container';
 
 function Header() {
   const [isSticky, setSticky] = useState(false);
@@ -21,14 +20,14 @@ function Header() {
   }, []);
 
   return (
-    <Container>
+    <div>
       <div className="Header" >
         waveywaves
       </div>
       <div className={`stickyHeader${isSticky ? ' sticky' : ''}`} ref={ref}>
         <StickyHeader />
       </div>
-   </Container>
+   </div>
   );
 }
 

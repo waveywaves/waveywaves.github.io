@@ -5,11 +5,12 @@ import Header from './Header/Header'
 import './Blog.css'
 
 import Container from 'react-bootstrap/Container';
+import "./Blog.css"
 
 
 function Blog() {
   return (
-    <Container>
+    <Container className="Blog">
         <Header/>
         <Body/>
     </Container>
@@ -17,3 +18,4 @@ function Blog() {
 }
 
 export default Blog;
+ 
