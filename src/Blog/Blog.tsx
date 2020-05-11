@@ -4,16 +4,15 @@ import Header from './Header/Header'
 
 import './Blog.css'
 
-import Container from 'react-bootstrap/Container';
 import "./Blog.css"
 
 
 function Blog() {
   return (
-    <Container className="Blog">
+    <div>
         <Header/>
         <Body/>
-    </Container>
+    </div>
   );
 }
 
