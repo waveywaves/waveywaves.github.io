@@ -9,8 +9,6 @@
   color: rgb(0, 0, 0);
   border-style: groove;
   position: relative; /* Sticky header will change this value */
-  margin-right: 0 !important; 
-  margin-left: 0 !important;
 }
 
 .stickyHeader {

@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 
 function Post() {
   return (
-    <Row className="Post">
+    <div className="Post">
       <h3>
         Lorem Ipsum Dimsum
       </h3>
@@ -18,7 +18,7 @@ Fusce enim ipsum, rhoncus sit amet ipsum at, sodales varius justo. Quisque non n
 
 Vestibulum pellentesque dignissim dui vel dignissim. 
       </p>
-    </Row>
+    </div>
   );
 }
 
