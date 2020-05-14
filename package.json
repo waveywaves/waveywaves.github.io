@@ -43,6 +43,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "p5": "^1.0.0",
+    "react-p5-wrapper": "^2.0.0"
   }
 }
