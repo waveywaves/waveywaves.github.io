@@ -42,7 +42,7 @@ class Header extends React.Component {
       <div className="Header" >
         waveywaves
       </div>
-      <div className=" ">
+      <div className="sticky">
         <StickyHeader/> 
       </div>
    </div>
