@@ -36,13 +36,28 @@ const P5Wrapper = require("react-p5-wrapper");
 // }
 
 class Header extends React.Component {
+
+  state = {
+    isSticky: false
+  };
+
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const isSticky = Math.round(window.scrollY) >= 100;
+      if (isSticky !== this.state.isSticky) {
+          this.setState({ isSticky })
+      }
+    });
+  }
+
+
   render(){
     return (
     <div>
       <div className="Header" >
         waveywaves
       </div>
-      <div className="sticky">
+      <div className={this.state.isSticky ? 'sticky' : 'stickyHeader'}>
         <StickyHeader/> 
       </div>
    </div>
