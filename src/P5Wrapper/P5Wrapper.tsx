@@ -1,5 +1,6 @@
 import { stat } from 'fs';
 import React, { Component } from 'react';
+import { statement } from '@babel/template';
 const p5 = require('p5');
 
 export interface P5WrapperProps {
@@ -37,7 +38,7 @@ export default class P5Wrapper extends Component <P5WrapperProps, P5WrapperState
 
   static getDerivedStateFromProps(props: P5WrapperProps, state: P5WrapperState){
     let canvas = state.canvas;
-    if(state.sketch !== props.sketch){
+    if(state.sketch !== props.sketch && canvas != undefined){
       state.wrapper.removeChild(state.wrapper.childNodes[0]);
       canvas.remove();
       canvas = new p5(props.sketch, state.wrapper)
@@ -55,7 +56,9 @@ export default class P5Wrapper extends Component <P5WrapperProps, P5WrapperState
 
 
   componentWillUnmount() {
-		this.state.canvas.remove();
+    if (this.state.canvas != null) {
+      this.state.canvas.remove();
+    }
 	}
 
   render() {
